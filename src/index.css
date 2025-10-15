@@ -323,3 +323,85 @@ section + section {
   background: rgba(230, 240, 240, 0.1);
   color: #0d8a89;
 }
+
+
+/* 👩‍🔬 Seção de profissionais */
+.profissionais-section {
+  text-align: center;
+  background: #fff;
+  padding: 2rem 1rem;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+/* 🧑‍⚕️ Grid de profissionais */
+.profissionais-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: start;
+}
+
+.prof-card {
+  background: #fdfdfd;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  max-width: 380px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.prof-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* 📸 Imagem do profissional */
+.prof-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+/* ✍️ Textos */
+.prof-nome {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.prof-cargo {
+  font-size: 1rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.prof-descricao {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+  .profissionais-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .prof-img {
+    height: 250px;
+  }
+}
