@@ -2,8 +2,18 @@ import React from "react";
 import evangelho from "../assets/evangelho.png";
 import  "../index.css";
 
+
 export default function Inicio() {
   return (
+     <>
+     {/* padrão para achar conteúdo mais facilmente "HELMET", lembrar de importar sempre! */}
+     {/* <Helmet>
+        <title>EA Estética - Clínica de Estética e Bem-Estar</title>
+        <meta name="description" content="Clínica especializada em tratamentos personalizados e cuidados com a saúde da pele." />
+        <meta name="keywords" content="estética, beleza, tratamentos faciais, cuidados com a pele, Juazeiro do Norte" />
+        <link rel="canonical" href="https://www.seusite.com/" />
+      </Helmet> */}
+    
     <section>
 <h1>Comunhão Espírita Cristo Redentor</h1>
       <h1>Bem-vindo</h1>
@@ -79,6 +89,6 @@ export default function Inicio() {
             </section>
 
     </section>
-    
+    </>
   );
 }
