@@ -1,41 +1,60 @@
 import React from "react";
-import autadesouza from "../assets/autadesouza.png";
+import { Helmet } from "react-helmet-async";
+import "../index.css";
+import "../Servicos.css";
 
-export default function Sociais() {
+export default function Servicos() {
   return (
-    <div className="main-content">
-
-      <section>
-      <h1>Campanha de Fraternidade Auta de Souza</h1>
-        <p>
-          A Campanha de Fraternidade Auta de Souza é uma iniciativa do movimento
-          espírita, realizada também pela Comunhão Espírita Cristo Redentor, que
-          visa promover a fraternidade e a solidariedade entre os seres humanos.
-          A campanha ocorre mensalmente, no segundo e no último domingo do mês
-          às 07:30h, e é aberta a todos.
-        </p>
-
-        <p>
-          O objetivo da campanha é sensibilizar as pessoas para a importância da
-          fraternidade, da solidariedade e da paz. Para isso, a campanha realiza
-          uma série de atividades, iniciando com a leitura do regulamento, o
-          canto do Hino da Alegria Cristã e a ida ao bairro planejado.
-        </p>
-
-        <p>
-          Essa é uma iniciativa significativa que convida todos à reflexão sobre
-          o valor dessas virtudes e ao compromisso com a construção de um mundo
-          melhor. Além disso, é essencial para a manutenção de alguns trabalhos
-          realizados pela casa.
-        </p>
-
-        <img
-          src={autadesouza}
-          alt="Segundo passo da solicitação"
-          className="mb-2  max-w-[50px]"
-          width={1000}
+    <>
+      {/* SEO / Cabeçalho */}
+      <Helmet>
+        <title>EA Estética - Nossos Serviços</title>
+        <meta
+          name="description"
+          content="Conheça nossos serviços corporais e faciais personalizados para realçar sua beleza e bem-estar."
         />
-      </section>
-    </div>
+        <meta
+          name="keywords"
+          content="estética corporal, estética facial, limpeza de pele, drenagem linfática, rejuvenescimento, bem-estar"
+        />
+        <link rel="canonical" href="https://www.site.com/servicos" />
+      </Helmet>
+
+      <main className="container">
+        <section id="servicos" className="servicos-section">
+          <h2 className="servicos-titulo">Nossos Serviços</h2>
+          <p className="servicos-intro">
+            Oferecemos uma linha completa de tratamentos estéticos faciais e corporais, realizados com
+            técnicas avançadas e profissionais qualificados para realçar sua beleza natural e promover bem-estar.
+          </p>
+
+          <div className="servicos-grid">
+            <div className="servico-card">
+              <h3>💆‍♀️ Tratamentos Faciais</h3>
+              <ul>
+                <li>Limpeza de pele profunda</li>
+                <li>Revitalização e hidratação facial</li>
+                <li>Peeling químico e mecânico</li>
+                <li>Microagulhamento</li>
+                <li>Tratamento para acne e manchas</li>
+                <li>Rejuvenescimento facial</li>
+              </ul>
+            </div>
+
+            <div className="servico-card">
+              <h3>💪 Tratamentos Corporais</h3>
+              <ul>
+                <li>Drenagem linfática manual</li>
+                <li>Massagem modeladora</li>
+                <li>Tratamento para celulite e flacidez</li>
+                <li>Redução de medidas</li>
+                <li>Banho de lua e esfoliação corporal</li>
+                <li>Terapias relaxantes e bem-estar</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }

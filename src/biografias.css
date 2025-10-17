@@ -1,0 +1,131 @@
+.bio-container {
+  background: linear-gradient(180deg, #fdfcfb, #e2d1c3);
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.bio-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+
+.bio-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1100px;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.bio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.bio-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.bio-image {
+  width: 45%;
+  height: 400px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+  filter: brightness(0.9);
+}
+
+.bio-card:hover .bio-image {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
+
+.bio-text {
+  flex: 1;
+  padding: 2rem;
+}
+
+.bio-text h2 {
+  font-size: 2rem;
+  color: #6a4029;
+}
+
+.bio-subtitle {
+  font-size: 1rem;
+  color: #b57642;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.bio-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.bio-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.6rem;
+  background: #b57642;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(181, 118, 66, 0.3);
+}
+
+.bio-button:hover {
+  background: #8a532d;
+}
+
+.bio-extra {
+  margin-top: 5rem;
+  text-align: center;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.bio-extra h3 {
+  font-size: 1.8rem;
+  color: #6a4029;
+  margin-bottom: 2rem;
+}
+
+.bio-extra ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bio-extra li {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.bio-quote {
+  font-style: italic;
+  background: #fff8f3;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.bio-quote span {
+  display: block;
+  margin-top: 1rem;
+  color: #b57642;
+  font-weight: 600;
+}

@@ -1,8 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import "../index.css";
+import "../Servicos.css";
 import edna from "../../public/edna.jpg";
 import everton from "../../public/everton.jpg";
+import Servicos from "./Servicos";
+import Contatos from "./Contato";
+import Biografias from "./Biografias";
 
 export default function Inicio() {
   return (
@@ -26,30 +30,35 @@ export default function Inicio() {
       <main className="container">
         <section id="profissionais" className="profissionais-section">
           
-          <div className="profissionais-grid">
-            {/* Profissional 1 */}
-            <div className="prof-card">
-              <img src={edna} alt="Edna - Esteticista" className="prof-img" />
-              <h2 className="prof-nome">Edna Alves</h2>
-              <p className="prof-cargo">Esteticista e Especialista em Cuidados Faciais</p>
-              <p className="prof-descricao">
-                Edna possui mais de 10 anos de experiência em estética facial e corporal,
-                oferecendo tratamentos personalizados com foco em resultados e bem-estar.
-              </p>
-            </div>
-
-            {/* Profissional 2 */}
-            <div className="prof-card">
-              <img src={everton} alt="Éverton Mangueira - Fisioterapeuta" className="prof-img" />
-              <h2 className="prof-nome">Éverton Mangueira</h2>
-              <p className="prof-cargo">Fisioterapeuta e Especialista em Estética Avançada</p>
-              <p className="prof-descricao">
-                Éverton combina técnicas modernas de fisioterapia e estética avançada,
-                promovendo saúde, equilíbrio corporal e autoestima em cada atendimento.
-              </p>
-            </div>
-          </div>
+          <div className="profissionais-grid-4col">
+  <div className="prof-col foto-col">
+    <img src={edna} alt="Edna - Esteticista" className="prof-img" />
+  </div>
+  <div className="prof-col dados-col">
+    <h2 className="prof-nome">Edna Alves</h2>
+    <p className="prof-cargo">Esteticista</p>
+    <p className="prof-descricao">
+      Edna possui mais de 10 anos de experiência em estética facial e corporal,
+      oferecendo tratamentos personalizados com foco em resultados e bem-estar.
+    </p>
+  </div>
+  <div className="prof-col dados-col">
+    <h2 className="prof-nome">Éverton Alves</h2>
+    <p className="prof-cargo">Biomédico e Especialista em Vigilância Sanitária</p>
+    <p className="prof-descricao">
+      Éverton combina técnicas modernas de fisioterapia e estética avançada,
+      promovendo saúde, equilíbrio corporal e autoestima em cada atendimento.
+    </p>
+  </div>
+  <div className="prof-col foto-col">
+    <img src={everton} alt="Éverton Alves - Biomédico" className="prof-img" />
+  </div>
+</div>
+      <Servicos/>
+      <Contatos/> 
+      <Biografias/>   
         </section>
+      
       </main>
 
       <footerfoote/>
