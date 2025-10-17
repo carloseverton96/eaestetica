@@ -1,7 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import "../index.css";
-import "../Servicos.css";
+import "../css/index.css";
+import "../css/Servicos.css";
+import "../css/contatos.css";
+import "../css/biografias.css";
 import edna from "../../public/edna.jpg";
 import everton from "../../public/everton.jpg";
 import Servicos from "./Servicos";
@@ -38,15 +40,15 @@ export default function Inicio() {
     <h2 className="prof-nome">Edna Alves</h2>
     <p className="prof-cargo">Esteticista</p>
     <p className="prof-descricao">
-      Edna possui mais de 10 anos de experiência em estética facial e corporal,
-      oferecendo tratamentos personalizados com foco em resultados e bem-estar.
+      Edna possui alia sua vivência em estética facial e corporal para
+      oferecer tratamentos personalizados com foco em resultados e bem-estar.
     </p>
   </div>
   <div className="prof-col dados-col">
     <h2 className="prof-nome">Éverton Alves</h2>
-    <p className="prof-cargo">Biomédico e Especialista em Vigilância Sanitária</p>
+    <p className="prof-cargo">Biomédico - Especialista em Vigilância Sanitária</p>
     <p className="prof-descricao">
-      Éverton combina técnicas modernas de fisioterapia e estética avançada,
+      Éverton combina técnicas modernas na área da estética avançada,
       promovendo saúde, equilíbrio corporal e autoestima em cada atendimento.
     </p>
   </div>

@@ -1,11 +1,31 @@
-/* 🎨 Variáveis globais */
+/* 🎨 Variáveis globais — atualizadas conforme identidade visual */
 :root {
-  --bg: #f8fafc;
-  --text: #111;
-  --nav: #8be0f5;
-  --accent: #0ea5a4;
-  --heading-font: Inter, system-ui, Arial, sans-serif;
-  --body-font: Inter, system-ui, Arial, sans-serif;
+  /* Cores da logo */
+  --logo-1: #03A688;
+  --logo-2: #04BF8A;
+  --logo-3: #15BF70;
+  --logo-4: #00A2AA;
+  --logo-5: #04BFBF;
+
+  /* Cores para posts */
+  --post-bg: #F2F2F2;
+  --post-text-dark: #1D261E;
+  --post-accent-1: #6D8C6F;
+  --post-accent-2: #5A735B;
+  --post-accent-3: #324033;
+
+  /* Cores base do site */
+  --bg: #ffffff;
+  --text: var(--post-text-dark);
+  --nav: var(--logo-2);
+  --accent: var(--logo-1);
+  --accent-hover: var(--logo-3);
+
+  /* Fontes */
+  --heading-font: "Charm", "Montserrat", serif;
+  --body-font: "Montserrat", system-ui, Arial, sans-serif;
+
+  /* Outras */
   --radius: 8px;
 }
 
@@ -29,29 +49,29 @@ body {
 
 /* 🔗 Navbar */
 .navbar {
-  position: sticky; /* mantém no topo sem sair do fluxo do documento */
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 0.5rem 0.5rem;
   background: var(--nav);
   color: #012b5c;
-  flex-wrap: wrap; /* permite que links quebrem de linha */
-  z-index: 1000; /* fica acima do restante da página */
-  box-shadow: 0 2px 6px rgba(136, 201, 231, 0.15);
+  flex-wrap: wrap;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* garante espaço entre navbar e conteúdo */
 main, .container {
-  margin-top: 40px; /* ajustável conforme altura da navbar */
+  margin-top: 20px;
 }
 
 .brand {
   font-weight: 700;
   margin-bottom: 0.5rem;
+  font-family: var(--heading-font); /* marca com Charm */
 }
 
 .nav-links {
@@ -64,15 +84,16 @@ main, .container {
 }
 
 .nav-links a {
-  color: #11253b;
+  color: var(--post-text-dark);
   text-decoration: none;
   font-weight: 500;
   white-space: nowrap;
   transition: color 0.2s;
+  font-family: var(--body-font);
 }
 
 .nav-links a:hover {
-  color: var(--accent);
+  color: var(--accent-hover);
 }
 
 main {
@@ -89,7 +110,7 @@ main {
 
 /* 👩‍🔬 Seção de profissionais */
 .profissionais-section {
-  background: #fff;
+  background: var(--post-bg); /* fundo claro para posts */
   padding: 4% 2%;
   border-radius: var(--radius);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
@@ -103,7 +124,6 @@ main {
   align-items: start;
 }
 
-/* Colunas gerais */
 .prof-col {
   display: flex;
   flex-direction: column;
@@ -111,7 +131,6 @@ main {
   text-align: center;
 }
 
-/* Fotos */
 .foto-col .prof-img {
   width: 100%;
   aspect-ratio: 3/4;
@@ -120,26 +139,28 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Textos */
 .dados-col .prof-nome {
-  font-family: var(--heading-font);
+  font-family: var(--heading-font); /* usa Charm para nomes */
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: var(--post-text-dark);
 }
 
 .dados-col .prof-cargo {
   font-size: 1.125rem;
-  color: var(--accent);
+  color: var(--accent); /* destaque com cor da logo */
   font-weight: 500;
   margin-bottom: 0.75rem;
+  font-family: var(--body-font);
 }
 
 .dados-col .prof-descricao {
   font-size: 1rem;
-  color: #333;
+  color: var(--post-text-dark);
   line-height: 1.5;
   max-width: 90%;
+  font-family: var(--body-font);
 }
 
 /* 🧩 Responsividade */
@@ -150,7 +171,6 @@ main {
   }
 }
 
-/* 📱 Layout mobile especial (duas fotos em cima, duas descrições embaixo) */
 @media (max-width: 640px) {
   .profissionais-grid-4col {
     display: grid;
@@ -161,7 +181,6 @@ main {
     gap: 1rem;
   }
 
-  /* Ordem das colunas no mobile */
   .prof-col:nth-child(1) { grid-area: foto1; }
   .prof-col:nth-child(2) { grid-area: texto1; }
   .prof-col:nth-child(3) { grid-area: texto2; }
@@ -192,12 +211,7 @@ footer {
   text-align: center;
   padding: 0.5rem;
   background: var(--nav);
-  color: var(--text);
+  color: var(--post-text-dark);
   font-size: 0.875rem;
+  font-family: var(--body-font);
 }
-
-
-
-
-
-

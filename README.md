@@ -1,3 +1,6 @@
+
+Recomendação: Use uma única imagem de 800×1067 px (3:4) em formato WebP (ou JPG com boa atualização).
+
 Checklist final antes do deploy
 
 npm run build gera dist sem erros.

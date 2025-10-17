@@ -1,12 +1,12 @@
 .contato-container {
   width: 100%;
   padding: 4% 6%;
-  background: var(--bg);
+  background: var(--post-bg); /* Usa fundo da paleta de posts para contraste suave */
   color: var(--text);
 }
 
 .contato-section {
-  background: #fff;
+  background: var(--bg); /* #ffffff — fundo limpo */
   border-radius: var(--radius);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   padding: 3rem 2rem;
@@ -16,15 +16,18 @@
 }
 
 .contato-titulo {
+  font-family: var(--heading-font); /* Charm para títulos */
   font-size: 2rem;
   color: var(--text);
   margin-bottom: 0.5rem;
 }
 
 .contato-subtitulo {
-  color: #555;
+  font-family: var(--body-font); /* Montserrat */
+  color: var(--post-accent-2); /* #5A735B — mais harmonioso que cinza genérico */
   font-size: 1.1rem;
   margin-bottom: 2rem;
+  line-height: 1.5;
 }
 
 .contato-grid {
@@ -45,23 +48,26 @@
   align-items: flex-start;
   gap: 1rem;
   text-align: left;
+  font-family: var(--body-font); /* Montserrat em todo o conteúdo */
 }
 
 .contato-item h3 {
   margin-bottom: 0.25rem;
+  font-family: var(--heading-font); /* Charm nos subtítulos dos itens (opcional, mas elegante) */
   font-size: 1.1rem;
-  color: var(--accent);
+  color: var(--accent); /* #03A688 */
 }
 
 .contato-item p,
 .contato-item a {
-  color: #333;
+  color: var(--text); /* #1D261E */
   font-size: 1rem;
   line-height: 1.4;
+  text-decoration: none;
 }
 
 .contato-item a:hover {
-  color: var(--accent);
+  color: var(--accent-hover); /* #15BF70 — transição suave */
 }
 
 .contato-icon {
@@ -97,6 +103,7 @@
     font-size: 1.6rem;
   }
 }
+
 @media (max-width: 480px) {
   .contato-container {
     padding: 4% 2%;

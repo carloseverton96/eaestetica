@@ -1,14 +1,14 @@
 import React from "react";
-import "../Biografias.css";
-import "../index.css";
-import "../Servicos.css";
-import "../contatos.css";
+import "../css/biografias.css";
+import "../css/index.css";
+import "../css/Servicos.css";
+import "../css/contatos.css";
 import { motion } from "framer-motion";
 
 export default function Biografias() {
   return (
     <div className="bio-container">
-      <section className="bio-section">
+      
         <motion.div
           className="bio-card"
           initial={{ opacity: 0, y: 50 }}
@@ -17,7 +17,7 @@ export default function Biografias() {
           viewport={{ once: true }}
         >
           <img
-            src="/images/everton.jpg"
+            src="/public/everton.jpg"
             alt="Carlos Everton Mangueira"
             className="bio-image"
           />
@@ -33,12 +33,7 @@ export default function Biografias() {
               segurança sanitária e políticas públicas de saúde.
             </p>
 
-            <p>
-              Seu percurso acadêmico e profissional reflete dedicação à
-              ciência, ética e qualidade. Autor e coautor de artigos publicados
-              em revistas científicas e colaborador em projetos de capacitação
-              em boas práticas e vigilância sanitária.
-            </p>
+            
 
             <motion.a
               href="#everton-detalhes"
@@ -59,7 +54,7 @@ export default function Biografias() {
           viewport={{ once: true }}
         >
           <img
-            src="/images/edna.jpg"
+            src="/public/edna.jpg"
             alt="Edna Silva"
             className="bio-image"
           />
@@ -89,7 +84,7 @@ export default function Biografias() {
             </motion.a>
           </div>
         </motion.div>
-      </section>
+      
 
       <section className="bio-extra" id="everton-detalhes">
         <h3>Trajetória Acadêmica e Científica</h3>
