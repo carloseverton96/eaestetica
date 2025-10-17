@@ -4,6 +4,7 @@ import "../css/index.css";
 import "../css/Servicos.css";
 import "../css/contatos.css";
 import { motion } from "framer-motion";
+import { BookUser } from "lucide-react";
 
 export default function Biografias() {
   return (
@@ -22,7 +23,7 @@ export default function Biografias() {
             className="bio-image"
           />
           <div className="bio-text">
-            <h2>Carlos Éverton Alves Mangueira</h2>
+            <h2>Everton Alves</h2>
             <p className="bio-subtitle">Biomédico | Coordenador de Vigilância Sanitária</p>
 
             <p>
@@ -59,7 +60,7 @@ export default function Biografias() {
             className="bio-image"
           />
           <div className="bio-text">
-            <h2>Edna Silva</h2>
+            <h2>Edna Alves</h2>
             <p className="bio-subtitle">Esteticista & Cosmetóloga</p>
 
             <p>
@@ -109,11 +110,11 @@ export default function Biografias() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
         >
-          <p>
-            “A beleza real nasce do equilíbrio entre corpo, mente e pele.
-            Trabalhar com estética é restaurar a confiança e revelar o que há de
-            melhor em cada pessoa.”
-          </p>
+          <li>🧬 Graduanda em Tecnologia Estética e Cosmética</li>
+          <li>🔬 Limpeza de pele Premmium - ADCOS</li>
+          <li>🏛️<BookUser /> Redução de medidas com Bioestimuladores - ECCOS</li>
+          
+          
           <span>— Edna Silva</span>
         </motion.div>
       </section>
