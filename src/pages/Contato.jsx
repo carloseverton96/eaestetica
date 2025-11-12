@@ -41,7 +41,10 @@ export default function Contatos() {
                 <Phone className="contato-icon" />
                 <div>
                   <h3>Telefone / WhatsApp</h3>
-                  <p>(88) 9 9999-9999</p>
+                  <p><a href="https://wa.me/5588988775820" target="_blank">(88) 9 8877-5820 - Everton Alves</a>
+                  <p><a href="https://wa.me/5588988413363" target="_blank">(88) 9 8841-3363 Edna Alves</a></p>
+
+</p>
                 </div>
               </div>
 
@@ -49,7 +52,7 @@ export default function Contatos() {
                 <Mail className="contato-icon" />
                 <div>
                   <h3>Email</h3>
-                  <p>contato@eaestetica.com.br</p>
+                  <p>eaesteticaalves@gmail.com</p>
                 </div>
               </div>
 
@@ -57,17 +60,28 @@ export default function Contatos() {
                 <Instagram className="contato-icon" />
                 <div>
                   <h3>Instagram</h3>
-                  <a
-                    href="https://instagram.com/ea.estetica"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @ea.estetica
-                  </a>
+                  <p>
+                    <a
+                      href="https://instagram.com/evertonalvesbiomedico"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      @evertonalvesbiomedico
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      href="https://instagram.com/ednamdealves1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      @ednamdealves1
+                    </a>
+                  </p>
                 </div>
               </div>
 
-              <div className="contato-item">
+              {/* <div className="contato-item">
                 <Facebook className="contato-icon" />
                 <div>
                   <h3>Facebook</h3>
@@ -79,22 +93,22 @@ export default function Contatos() {
                     /ea.estetica
                   </a>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="contato-item">
+              {/* <div className="contato-item">
                 <MapPin className="contato-icon" />
                 <div>
                   <h3>Endereço</h3>
                   <p>Rua Exemplo, 123 - Juazeiro do Norte, CE</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="contato-item">
                 <Clock className="contato-icon" />
                 <div>
                   <h3>Horário de Atendimento</h3>
-                  <p>Seg a Sex: 8h às 18h</p>
-                  <p>Sábado: 8h às 12h</p>
+                  <p>Segunda-feira a Sábado: 8h às 18h</p>
+                  <p>Consulte a disponibilidade</p>
                 </div>
               </div>
             </div>
@@ -103,7 +117,7 @@ export default function Contatos() {
             <div className="contato-mapa">
               <iframe
                 title="Localização EA Estética"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.743746655243!2d-39.3123456!3d-7.2101234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a0c8f15c0000001%3A0xabcdef1234567890!2sEA%20Est%C3%A9tica!5e0!3m2!1spt-BR!2sbr!4v1696451234567"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.0936293377927!2d-39.33047359999999!3d-7.2301609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a1827ad726a7ad%3A0x1c9ee20fafe242ad!2sR.%20Valdomiro%20Mar%C3%A7al%20do%20Carmo%2C%20336%20-%20Tri%C3%A2ngulo%2C%20Juazeiro%20do%20Norte%20-%20CE%2C%2063041-080!5e0!3m2!1spt-BR!2sbr!4v1762938077390!5m2!1spt-BR!2sbr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

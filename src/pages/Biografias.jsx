@@ -27,12 +27,10 @@ export default function Biografias() {
             <p className="bio-subtitle">Biomédico | Coordenador de Vigilância Sanitária</p>
 
             <p>
-              Biomédico formado pelo Centro Universitário Dr. Leão Sampaio, com
-              especializações em Citologia Clínica e Vigilância Sanitária pela
-              Escola de Saúde Pública do Ceará. Atua na gestão pública, pesquisa
-              científica e docência, com vasta experiência em microbiologia,
-              segurança sanitária e políticas públicas de saúde.
-            </p>
+              Biomédico graduado pelo Centro Universitário Dr. Leão Sampaio, com especializações em Citologia Clínica e Vigilância Sanitária pela Escola de Saúde Pública do Ceará.</p> 
+              <p>Atua na área de estética avançada e saúde integrativa, unindo conhecimento científico e práticas seguras para promover resultados naturais, harmonia facial e bem-estar global.</p>
+              <p> Possui experiência em biotecnologia aplicada à estética, protocolos personalizados e segurança sanitária em procedimentos estéticos.</p>
+            
 
             
 
@@ -64,13 +62,13 @@ export default function Biografias() {
             <p className="bio-subtitle">Esteticista & Cosmetóloga</p>
 
             <p>
-              Especialista em estética avançada e terapias faciais e corporais,
+              Expert em estética avançada e terapias faciais e corporais,
               Edna combina ciência e arte em cada atendimento. Sua missão é
               promover o equilíbrio entre bem-estar, autoestima e saúde da pele.
             </p>
 
             <p>
-              Com formação sólida e constante atualização, desenvolveu métodos
+              Com formação sólida e constante atualização, desenvolve métodos
               exclusivos de rejuvenescimento e protocolos personalizados,
               conquistando resultados notáveis e fidelização de clientes.
             </p>
@@ -81,14 +79,14 @@ export default function Biografias() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              Conheça sua filosofia
+              Ver trajetória completa
             </motion.a>
           </div>
         </motion.div>
       
 
       <section className="bio-extra" id="everton-detalhes">
-        <h3>Trajetória Acadêmica e Científica</h3>
+        <h3>Trajetória Acadêmica e Profissional - Everton Alves</h3>
         <motion.ul
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -97,25 +95,26 @@ export default function Biografias() {
           <li>🧬 Graduação em Biomedicina – UNILEÃO (2018)</li>
           <li>🔬 Especialização em Citologia Clínica – UNILEÃO (2020)</li>
           <li>🏛️ Especialização em Vigilância Sanitária – ESP/CE (2023)</li>
-          <li>📚 Produção científica com ênfase em microbiologia e fitoterapia</li>
+          <li>📚 Pós-graduando em MBA em Estética Avançada</li>
           <li>💼 Coordenador de Vigilância Sanitária de Juazeiro do Norte</li>
         </motion.ul>
       </section>
 
       <section className="bio-extra" id="edna-detalhes">
-        <h3>Abordagem Estética e Filosofia de Trabalho</h3>
+        <h3>Trajetória Acadêmica e Profissional - Edna Alves</h3>
         <motion.div
           className="bio-quote"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
         >
-          <li>🧬 Graduanda em Tecnologia Estética e Cosmética</li>
+          <li>📚 Graduanda em Tecnologia Estética e Cosmética</li>
+          <li>🧬 Esteticista facial e corporal</li>
           <li>🔬 Limpeza de pele Premmium - ADCOS</li>
-          <li>🏛️<BookUser /> Redução de medidas com Bioestimuladores - ECCOS</li>
+          <li>🏛️ Redução de medidas com Bioestimuladores - ECCOS</li>
           
           
-          <span>— Edna Silva</span>
+          <span>— Edna Alves</span>
         </motion.div>
       </section>
     </div>

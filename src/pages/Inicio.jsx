@@ -40,7 +40,7 @@ export default function Inicio() {
     <h2 className="prof-nome">Edna Alves</h2>
     <p className="prof-cargo">Esteticista</p>
     <p className="prof-descricao">
-      Edna possui alia sua vivência em estética facial e corporal para
+      Alia sua vivência em estética facial e corporal para
       oferecer tratamentos personalizados com foco em resultados e bem-estar.
     </p>
   </div>
@@ -48,12 +48,11 @@ export default function Inicio() {
     <h2 className="prof-nome">Éverton Alves</h2>
     <p className="prof-cargo">Biomédico - Especialista em Vigilância Sanitária</p>
     <p className="prof-descricao">
-      Éverton combina técnicas modernas na área da estética avançada,
-      promovendo saúde, equilíbrio corporal e autoestima em cada atendimento.
+      Pós-graduando em Estética combina técnicas modernas na área da estética avançada, promovendo saúde, equilíbrio corporal e autoestima em cada atendimento.
     </p>
   </div>
   <div className="prof-col foto-col">
-    <img src={everton} alt="Éverton Alves - Biomédico" className="prof-img" />
+    <img src={everton} alt="Everton Alves - Biomédico" className="prof-img" />
   </div>
 </div>
       <Servicos/>

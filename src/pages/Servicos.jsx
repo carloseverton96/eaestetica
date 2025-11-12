@@ -26,7 +26,7 @@ export default function Servicos() {
         <section id="servicos" className="servicos-section">
           <h2 className="servicos-titulo">Nossos Serviços</h2>
           <p className="servicos-intro">
-            Oferecemos uma linha completa de tratamentos estéticos faciais e corporais, realizados com
+            Tratamentos estéticos faciais e corporais, realizados com
             técnicas avançadas e profissionais qualificados para realçar sua beleza natural e promover bem-estar.
           </p>
 
@@ -40,18 +40,19 @@ export default function Servicos() {
                 <li>Microagulhamento</li>
                 <li>Tratamento para acne e manchas</li>
                 <li>Rejuvenescimento facial</li>
+                <li>Tratamento de linhas finas de expressão</li>
               </ul>
             </div>
 
             <div className="servico-card">
               <h3>💪 Tratamentos Corporais</h3>
               <ul>
-                <li>Drenagem linfática manual</li>
+                <li>Massagem relaxante</li>
                 <li>Massagem modeladora</li>
                 <li>Tratamento para celulite e flacidez</li>
                 <li>Redução de medidas</li>
-                <li>Banho de lua e esfoliação corporal</li>
                 <li>Terapias relaxantes e bem-estar</li>
+                <li>Remoção de Acrocódons</li>
               </ul>
             </div>
           </div>
