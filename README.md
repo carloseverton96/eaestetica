@@ -15,5 +15,6 @@ Se usar rotas cliente, inclua _redirects ou netlify.toml.
 
 
 
+
 npm run build
 npm run deploy
