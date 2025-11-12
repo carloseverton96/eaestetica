@@ -1,9 +1,4 @@
 [build]
-
+  base = "ea-estetica"
   command = "npm run build"
-  publish = "dist"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  publish = "ea-estetica/dist"
