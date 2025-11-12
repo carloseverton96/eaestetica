@@ -1,4 +1,5 @@
 [build]
+base = "ea-estetica"
   command = "npm run build"
   publish = "dist"
 
