@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/biografias.css";
 import "../css/index.css";
-import "../css/Servicos.css";
+
 import "../css/contatos.css";
 import { motion } from "framer-motion";
 import { BookUser } from "lucide-react";

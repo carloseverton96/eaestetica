@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import "../css/contatos.css";
 import "../css/index.css";
-import "../css/Servicos.css";
+
 import "../css/biografias.css";
 import { Mail, Instagram, Facebook, Phone, MapPin, Clock } from "lucide-react";
 

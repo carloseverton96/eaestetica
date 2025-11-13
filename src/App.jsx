@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Contato from "./pages/Contato";
 import Inicio from "./pages/Inicio";
 import Biografias from './pages/Biografias';
-import Servicos from "./pages/Servicos";
+
 import Parceiros from "./pages/Parceiros";
 
 
