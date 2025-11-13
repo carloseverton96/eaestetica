@@ -53,7 +53,7 @@ export default function Biografias() {
           viewport={{ once: true }}
         >
           <img
-            src="/public/edna.jpg"
+            src="/public/edna.jpeg"
             alt="Edna Silva"
             className="bio-image"
           />

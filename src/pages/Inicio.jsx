@@ -4,7 +4,7 @@ import "../css/index.css";
 
 import "../css/contatos.css";
 import "../css/biografias.css";
-import edna from "../../public/edna.jpg";
+import edna from "../../public/edna.jpeg";
 import everton from "../../public/everton.jpg";
 import Servicos from "./Servicos";
 import Contatos from "./Contato";
