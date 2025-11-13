@@ -50,7 +50,7 @@ export default function Biografias() {
           
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           className="bio-card reverse"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ export default function Biografias() {
               Ver trajetória completa
             </motion.a>
           </div>
-        </motion.div>
+        </motion.div> */}
       
 
       <section className="bio-extra" id="everton-detalhes">
