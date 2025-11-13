@@ -41,10 +41,16 @@ export default function Contatos() {
                 <Phone className="contato-icon" />
                 <div>
                   <h3>Telefone / WhatsApp</h3>
-                  <p><a href="https://wa.me/5588988775820" target="_blank">(88) 9 8877-5820 - Everton Alves</a>
-                  <p><a href="https://wa.me/5588988413363" target="_blank">(88) 9 8841-3363 Edna Alves</a></p>
-
-</p>
+                  <p>
+    <a href="https://wa.me/5588988775820" target="_blank" rel="noopener noreferrer">
+      (88) 9 8877-5820 - Everton Alves
+    </a>
+  </p>
+  <p>
+    <a href="https://wa.me/5588988413363" target="_blank" rel="noopener noreferrer">
+      (88) 9 8841-3363 - Edna Alves
+    </a>
+  </p>
                 </div>
               </div>
 
