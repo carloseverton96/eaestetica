@@ -6,6 +6,7 @@ import Inicio from "./pages/Inicio";
 import Biografias from './pages/Biografias';
 
 import Parceiros from "./pages/Parceiros";
+import Servicos from "./pages/Servicos";
 
 
 export default function App() {
@@ -16,7 +17,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Inicio />} />
           
-          <Route path="/Biografias" element={<Biografias />} />
+          <Route path="/biografias" element={<Biografias />} />
           <Route path="/contato" element={<Contato />} />
           
           <Route path="/servicos" element={<Servicos />} />
