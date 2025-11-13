@@ -1,8 +1,7 @@
 import React from "react";
 import "../css/biografias.css";
 import "../css/index.css";
-import edna from "../../public/edna.jpeg";
-import everton from "../../public/everton.jpg";
+
 import "../css/contatos.css";
 import { motion } from "framer-motion";
 import { BookUser } from "lucide-react";
@@ -18,7 +17,11 @@ export default function Biografias() {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <img src={everton} alt="Everton Alves - Biomédico" className="prof-img" />
+          <img
+            src="/public/everton.jpg"
+            alt="Carlos Everton Mangueira"
+            className="bio-image"
+          />
           <div className="bio-text">
             <h2>Everton Alves</h2>
             <p className="bio-subtitle">Biomédico | Coordenador de Vigilância Sanitária</p>
@@ -49,7 +52,11 @@ export default function Biografias() {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <img src={edna} alt="Edna - Esteticista" className="prof-img" />
+          <img
+            src="/public/edna.jpeg"
+            alt="Edna Silva"
+            className="bio-image"
+          />
           <div className="bio-text">
             <h2>Edna Alves</h2>
             <p className="bio-subtitle">Esteticista & Cosmetóloga</p>

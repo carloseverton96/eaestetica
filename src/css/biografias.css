@@ -155,3 +155,79 @@
   font-weight: 700;
   font-family: var(--heading-font); /* Charm no nome da citação */
 }
+
+/* 📱 MOBILE RESPONSIVO */
+@media (max-width: 768px) {
+  .bio-card {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .bio-card.reverse {
+    flex-direction: column !important;
+  }
+
+  .bio-image {
+    width: 100% !important;
+    height: 280px;
+    object-fit: cover;
+    border-radius: var(--radius);
+  }
+
+  .bio-text {
+    padding: 1rem 0.5rem;
+  }
+
+  .bio-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .bio-text p {
+    font-size: 0.95rem;
+  }
+
+  .bio-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .bio-extra {
+    margin-top: 3rem;
+    padding: 0 1rem;
+  }
+
+  .bio-extra h3 {
+    font-size: 1.4rem;
+  }
+
+  .bio-extra li {
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .bio-quote {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* 📱 Telas muito pequenas (iPhone SE / Android pequenos) */
+@media (max-width: 480px) {
+  .bio-image {
+    height: 220px;
+  }
+
+  .bio-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .bio-text p {
+    font-size: 0.9rem;
+  }
+
+  .bio-button {
+    padding: 0.7rem 1rem;
+  }
+}
