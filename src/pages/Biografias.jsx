@@ -1,15 +1,11 @@
 import React from "react";
-import "../css/biografias.css";
 import "../css/index.css";
-
-import "../css/contatos.css";
 import { motion } from "framer-motion";
-import { BookUser } from "lucide-react";
 
 export default function Biografias() {
   return (
     <div className="bio-container">
-      
+      <div className="bio-section">
         <motion.div
           className="bio-card"
           initial={{ opacity: 0, y: 50 }}
@@ -19,7 +15,7 @@ export default function Biografias() {
         >
           <img
             src="/public/everton.jpg"
-            alt="Carlos Everton Mangueira"
+            alt="Everton Alves"
             className="bio-image"
           />
           <div className="bio-text">
@@ -27,17 +23,22 @@ export default function Biografias() {
             <p className="bio-subtitle">Biomédico | Coordenador de Vigilância Sanitária</p>
 
             <p>
-              Biomédico graduado pelo Centro Universitário Dr. Leão Sampaio, com especializações em Citologia Clínica e Vigilância Sanitária pela Escola de Saúde Pública do Ceará.</p> 
-              <p>Atua na área de estética avançada e saúde integrativa, unindo conhecimento científico e práticas seguras para promover resultados naturais, harmonia facial e bem-estar global.</p>
-              <p> Possui experiência em biotecnologia aplicada à estética, protocolos personalizados e segurança sanitária em procedimentos estéticos.</p>
-            
-
-            
+              Biomédico graduado pelo Centro Universitário Dr. Leão Sampaio, com especializações 
+              em Citologia Clínica e Vigilância Sanitária pela Escola de Saúde Pública do Ceará.
+            </p>
+            <p>
+              Atua na área de estética avançada e saúde integrativa, unindo conhecimento científico 
+              e práticas seguras para promover resultados naturais, harmonia facial e bem-estar global.
+            </p>
+            <p>
+              Possui experiência em biotecnologia aplicada à estética, protocolos personalizados e 
+              segurança sanitária em procedimentos estéticos.
+            </p>
 
             <motion.a
               href="#everton-detalhes"
               className="bio-button"
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Ver trajetória completa
@@ -54,7 +55,7 @@ export default function Biografias() {
         >
           <img
             src="/public/edna.jpeg"
-            alt="Edna Silva"
+            alt="Edna Alves"
             className="bio-image"
           />
           <div className="bio-text">
@@ -76,47 +77,45 @@ export default function Biografias() {
             <motion.a
               href="#edna-detalhes"
               className="bio-button"
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Ver trajetória completa
             </motion.a>
           </div>
         </motion.div>
-      
 
-      <section className="bio-extra" id="everton-detalhes">
-        <h3>Trajetória Acadêmica e Profissional - Everton Alves</h3>
-        <motion.ul
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <li>🧬 Graduação em Biomedicina – UNILEÃO (2018)</li>
-          <li>🔬 Especialização em Citologia Clínica – UNILEÃO (2020)</li>
-          <li>🏛️ Especialização em Vigilância Sanitária – ESP/CE (2023)</li>
-          <li>📚 Pós-graduando em MBA em Estética Avançada</li>
-          <li>💼 Coordenador de Vigilância Sanitária de Juazeiro do Norte</li>
-        </motion.ul>
-      </section>
+        <section className="bio-extra" id="everton-detalhes">
+          <h3>Trajetória Acadêmica e Profissional - Everton Alves</h3>
+          <motion.ul
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
+            <li>🧬 Graduação em Biomedicina – UNILEÃO (2018)</li>
+            <li>🔬 Especialização em Citologia Clínica – UNILEÃO (2020)</li>
+            <li>🏛️ Especialização em Vigilância Sanitária – ESP/CE (2023)</li>
+            <li>📚 Pós-graduando em MBA em Estética Avançada</li>
+            <li>💼 Coordenador de Vigilância Sanitária de Juazeiro do Norte</li>
+          </motion.ul>
+        </section>
 
-      <section className="bio-extra" id="edna-detalhes">
-        <h3>Trajetória Acadêmica e Profissional - Edna Alves</h3>
-        <motion.div
-          className="bio-quote"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1.2 }}
-        >
-          <li>📚 Graduanda em Tecnologia Estética e Cosmética</li>
-          <li>🧬 Esteticista facial e corporal</li>
-          <li>🔬 Limpeza de pele Premmium - ADCOS</li>
-          <li>🏛️ Redução de medidas com Bioestimuladores - ECCOS</li>
-          
-          
-          <span>— Edna Alves</span>
-        </motion.div>
-      </section>
+        <section className="bio-extra" id="edna-detalhes">
+          <h3>Trajetória Acadêmica e Profissional - Edna Alves</h3>
+          <motion.ul
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.2 }}
+            viewport={{ once: true }}
+          >
+            <li>📚 Graduanda em Tecnologia Estética e Cosmética</li>
+            <li>🧬 Esteticista facial e corporal</li>
+            <li>🔬 Limpeza de pele Premmium - ADCOS</li>
+            <li>🏛️ Redução de medidas com Bioestimuladores - ECCOS</li>
+          </motion.ul>
+        </section>
+      </div>
     </div>
   );
 }

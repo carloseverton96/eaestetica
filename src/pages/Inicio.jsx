@@ -2,8 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import "../css/index.css";
 
-import "../css/contatos.css";
-import "../css/biografias.css";
+
 import edna from "../../public/edna.jpeg";
 import everton from "../../public/everton.jpg";
 import Servicos from "./Servicos";
@@ -62,7 +61,7 @@ export default function Inicio() {
       
       </main>
 
-      <footer/>
+     
     </>
   );
 }

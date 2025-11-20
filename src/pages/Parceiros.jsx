@@ -1,8 +1,7 @@
 import React from "react";
-import "../css/biografias.css";
 import "../css/index.css";
 
-import "../css/contatos.css";
+
 import { motion } from "framer-motion";
 import { BookUser } from "lucide-react";
 
@@ -90,38 +89,7 @@ export default function Biografias() {
         </motion.div> */}
       
 
-      <section className="bio-extra" id="everton-detalhes">
-        <h3>Trajetória Acadêmica e Profissional - Everton Alves</h3>
-        <motion.ul
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <li>🧬 Graduação em Biomedicina – UNILEÃO (2018)</li>
-          <li>🔬 Especialização em Citologia Clínica – UNILEÃO (2020)</li>
-          <li>🏛️ Especialização em Vigilância Sanitária – ESP/CE (2023)</li>
-          <li>📚 Pós-graduando em MBA em Estética Avançada</li>
-          <li>💼 Coordenador de Vigilância Sanitária de Juazeiro do Norte</li>
-        </motion.ul>
-      </section>
 
-      <section className="bio-extra" id="edna-detalhes">
-        <h3>Trajetória Acadêmica e Profissional - Edna Alves</h3>
-        <motion.div
-          className="bio-quote"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1.2 }}
-        >
-          <li>📚 Graduanda em Tecnologia Estética e Cosmética</li>
-          <li>🧬 Esteticista facial e corporal</li>
-          <li>🔬 Limpeza de pele Premmium - ADCOS</li>
-          <li>🏛️ Redução de medidas com Bioestimuladores - ECCOS</li>
-          
-          
-          <span>— Edna Alves</span>
-        </motion.div>
-      </section>
     </div>
   );
 }

@@ -2,8 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import "../css/index.css";
 
-import "../css/contatos.css";
-import "../css/biografias.css";
+
 
 export default function Servicos() {
   return (
