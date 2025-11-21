@@ -1,6 +1,9 @@
 import React from "react";
 import "../css/index.css";
 import { motion } from "framer-motion";
+import edna from "../../public/edna.jpeg";
+import everton from "../../public/everton.jpg";
+
 
 export default function Biografias() {
   return (
@@ -14,7 +17,7 @@ export default function Biografias() {
           viewport={{ once: true }}
         >
           <img
-            src="/public/everton.jpg"
+            src={everton}
             alt="Everton Alves"
             className="bio-image"
           />
@@ -54,7 +57,7 @@ export default function Biografias() {
           viewport={{ once: true }}
         >
           <img
-            src="/public/edna.jpeg"
+            src={edna}
             alt="Edna Alves"
             className="bio-image"
           />

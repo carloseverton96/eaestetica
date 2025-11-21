@@ -1,10 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import "../css/index.css";
-
-
 import edna from "../../public/edna.jpeg";
 import everton from "../../public/everton.jpg";
+import iago from "../../public/iago.jpeg";
 import Servicos from "./Servicos";
 import Contatos from "./Contato";
 import Biografias from "./Biografias";

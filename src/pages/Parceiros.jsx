@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/index.css";
-
+import iago from "../../public/iago.jpeg";
 
 import { motion } from "framer-motion";
 import { BookUser } from "lucide-react";
@@ -17,7 +17,7 @@ export default function Biografias() {
           viewport={{ once: true }}
         >
           <img
-            src="/public/iago.jpeg"
+            src={iago}
             alt="Carlos Everton Mangueira"
             className="bio-image"
           />
