@@ -1,66 +1,113 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import "../css/index.css";
-import edna from "../../public/edna.jpeg";
-import everton from "../../public/everton.jpg";
-import iago from "../../public/iago.jpeg";
-import Servicos from "./Servicos";
-import Contatos from "./Contato";
-import Biografias from "./Biografias";
+
+// COMPONENTES
+import Carousel from "../components/Carousel";
+
+// BANCO DE DADOS LOCAL
+import inicioData from "../data/inicioData";
 
 export default function Inicio() {
+  const { edicaoAtual, edicoesAnteriores, carrossel } = inicioData;
+
   return (
     <>
-      {/* SEO / Cabeçalho */}
+      {/* SEO */}
       <Helmet>
-        <title>EA Estética - Nossa Equipe</title>
+        <title>Periódico Espírita Fraternité - Edição Mensal</title>
         <meta
           name="description"
-          content="Conheça nossos profissionais especializados em estética e bem-estar."
+          content="Leia o Periódico Espírita Fraternité — edição mensal dedicada ao estudo, reflexão e difusão da Doutrina Espírita."
         />
         <meta
           name="keywords"
-          content="estética, beleza, profissionais, cuidados com a pele, bem-estar"
+          content="espiritismo, doutrina espírita, periódico, kardecismo, estudo espírita"
         />
-        <link rel="canonical" href="https://www.site.com" />
+        <link rel="canonical" href="https://www.periodicofraternite.com" />
       </Helmet>
 
-      
       {/* Conteúdo Principal */}
       <main className="container">
-        <section id="profissionais" className="profissionais-section">
-          
-          <div className="profissionais-grid-4col">
-  <div className="prof-col foto-col">
-    <img src={edna} alt="Edna - Esteticista" className="prof-img" />
-  </div>
-  <div className="prof-col dados-col">
-    <h2 className="prof-nome">Edna Alves</h2>
-    <p className="prof-cargo">Esteticista</p>
-    <p className="prof-descricao">
-      Alia sua vivência em estética facial e corporal para
-      oferecer tratamentos personalizados com foco em resultados e bem-estar.
-    </p>
-  </div>
-  <div className="prof-col dados-col">
-    <h2 className="prof-nome">Éverton Alves</h2>
-    <p className="prof-cargo">Biomédico - Especialista em Vigilância Sanitária</p>
-    <p className="prof-descricao">
-      Pós-graduando em Estética combina técnicas modernas na área da estética avançada, promovendo saúde, equilíbrio corporal e autoestima em cada atendimento.
-    </p>
-  </div>
-  <div className="prof-col foto-col">
-    <img src={everton} alt="Everton Alves - Biomédico" className="prof-img" />
-  </div>
-</div>
-      <Servicos/>
-      <Contatos/> 
-      <Biografias/>   
-        </section>
-      
-      </main>
 
-     
+        {/* =================== SEÇÃO DO PERIÓDICO =================== */}
+        <section id="periodico" className="periodico-mensal-section">
+          <h1 className="titulo-principal">{edicaoAtual.titulo}</h1>
+          <p className="periodico-sub">{edicaoAtual.subTitulo}</p>
+
+          <div className="periodico-grid-2col">
+
+            {/* CAPA */}
+            <div className="periodico-col foto-col">
+              <img
+                src={edicaoAtual.capa}
+                alt={`Capa da edição de ${edicaoAtual.mesAno}`}
+                className="periodico-img"
+              />
+            </div>
+
+            {/* INFORMAÇÕES */}
+            <div className="periodico-col dados-col">
+              <h2 className="periodico-edicao">{edicaoAtual.mesAno}</h2>
+
+              <p className="periodico-descricao">
+                {edicaoAtual.descricao}
+              </p>
+
+              <a
+                className="bio-button"
+                href={edicaoAtual.pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                📘 Ler / Baixar Edição Mensal
+              </a>
+
+              {/* Link para leitura sem download */}
+              <a
+                className="bio-button leitura-online"
+                href={`/periodico/${edicaoAtual.id}`}
+              >
+                👓 Ler Online no Navegador
+              </a>
+            </div>
+          </div>
+        </section>
+
+        
+
+        {/* =============== EDIÇÕES ANTERIORES =============== */}
+        <section className="anteriores-section">
+          <h2 className="anteriores-titulo">Edições Anteriores</h2>
+
+          <div className="anteriores-grid">
+            {edicoesAnteriores.map((item) => (
+              <div key={item.id} className="anteriores-card">
+                <p className="anteriores-mes">{item.mesAno}</p>
+
+                <div className="anteriores-buttons">
+                  <a
+                    className="anteriores-link"
+                    href={item.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    📘 Baixar PDF
+                  </a>
+
+                  <a
+                    className="anteriores-link leitura-online2"
+                    href={`/periodico/${item.id}`}
+                  >
+                    👓 Ler Online
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+      </main>
     </>
   );
 }
