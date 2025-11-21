@@ -1,11 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Contato from "./pages/Contato";
 import Inicio from "./pages/Inicio";
+import Biografias from './pages/Biografias';
 
+import Parceiros from "./pages/Parceiros";
+import Servicos from "./pages/Servicos";
 import BackToTop from "./components/BackToTop";
-import Periodico from "./pages/Periodico";
-import Contatos from "./pages/Contatos";
 
 
 export default function App() {
@@ -15,9 +17,12 @@ export default function App() {
       <main className="container">
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/periodico/:id" element={<Periodico />} />
-          <Route path="*" element={<Contatos />} />
           
+          <Route path="/biografias" element={<Biografias />} />
+          <Route path="/contato" element={<Contato />} />
+          
+          <Route path="/servicos" element={<Servicos />} />
+          <Route path="/parceiros" element={<Parceiros />} />
         </Routes>
         <BackToTop/>
       </main>

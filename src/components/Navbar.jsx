@@ -1,24 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logofraternite from "../../public/logofraternite.jpeg";
+import logoeaestetica from "../../public/logoeaestetica.png";
 
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <div className="navbar-content">
-
-        {/* LOGO */}
-        <div className="brand">
-          <img src={logofraternite} alt="Logotipo" width={60} height="auto" />
-        </div>
-
-        {/* LINKS */}
-        <ul className="nav-links">
-          <li><Link to="/">Início</Link></li>
-          <li><Link to="/contato">Contatos</Link></li>
-        </ul>
-
-      </div>
+      <div><img src={logoeaestetica} alt="Edna - Esteticista" width={70} /></div>
+      <ul className="nav-links">
+        <li><Link to="/">Início</Link></li>
+        <li><Link to="/servicos">Serviços</Link></li>
+        <li><Link to="/biografias">Biografias</Link></li>
+        <li><Link to="/parceiros">Parceiros</Link></li>
+        <li><Link to="/contato">Contatos</Link></li>
+      </ul>
     </nav>
   );
 }
