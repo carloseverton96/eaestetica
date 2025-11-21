@@ -7,6 +7,7 @@ import Biografias from './pages/Biografias';
 
 import Parceiros from "./pages/Parceiros";
 import Servicos from "./pages/Servicos";
+import BackToTop from "./components/BackToTop";
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/servicos" element={<Servicos />} />
           <Route path="/parceiros" element={<Parceiros />} />
         </Routes>
+        <BackToTop/>
       </main>
     </>
   );
